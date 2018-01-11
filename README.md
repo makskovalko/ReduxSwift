@@ -1,15 +1,5 @@
 # Redux Swift
 
-###### Functionality
-- Centralized State
-- Unidirectional Data Flow
-- Functional Reactive Programming
-
-###### Implementation
-- Type Safe
-- Extensible
-- Unobtrusive
-
 ### Application State
 The Application State is a container that stores all information needed for your app to render.
 Since it's only a data container, it can be of any type from a single Int to a complex Struct.
