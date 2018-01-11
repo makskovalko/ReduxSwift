@@ -1,12 +1,4 @@
-# ReduxSwift
-
-ReduxSwift is a minimal Swift port of [Redux](https://github.com/reactjs/redux), a popular JavaScript library for application state management.
-
-[![Swift version](https://img.shields.io/badge/Swift-3.0-brightgreen.svg?style=flat-square)](https://swift.org/)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
-[![Platforms](https://img.shields.io/badge/Platforms-iOS%20tvOS%20macOS%20watchOS-lightgrey.svg?style=flat-square)](https://swift.org/)
-[![Release](https://img.shields.io/badge/Release-1.1.0-blue.svg?style=flat-square)](https://github.com/lsunsi/ReduxSwift/releases)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/lsunsi/ReduxSwift/blob/master/LICENSE)
+# Redux Swift
 
 ###### Functionality
 - Centralized State
@@ -17,13 +9,6 @@ ReduxSwift is a minimal Swift port of [Redux](https://github.com/reactjs/redux),
 - Type Safe
 - Extensible
 - Unobtrusive
-
-## Getting Started
-
-> "The whole state of your app is stored in an object tree inside a single store.
-> The only way to change the state tree is to emit an action, an object describing what happened.
-> To specify how the actions transform the state tree, you write pure reducers.
-> That's it!" - Redux's Documentation
 
 ### Application State
 The Application State is a container that stores all information needed for your app to render.
@@ -173,46 +158,3 @@ let logger = Middlewares<AppState>.logger
 let loggedStore = Store<AppState>.init(reducer: reducer, state: nil, middlewares: [logger])
 
 ```
-
-## Installation
-
-### Carthage
-> This is the recommended way of installing this package.
-
-[Carthage](https://github.com/Carthage/Carthage) is an awesome dependency manager that'll take care of your dependencies without getting in your way.
-To install ReduxSwift through Carthage, just follow these steps:
-* Add the following line to your Cartfile
-```
-github "lsunsi/ReduxSwift"
-```
-* Run the following command to fetch and build your dependencies
-```
-$ carthage update
-```
-* Drag the compiled framework from the Carthage folder into your project
-* Rejoice!
-
-### Manually
-If you prefer to install this package manually, just follow these steps:
-* Make sure your project is a git repository. If it isn't, just run this command from your project root folder:
-```
-$ git init
-```
-* Add ReduxSwift as a git submodule by running the following command.
-```
-$ git submodule add https://github.com/lsunsi/ReduxSwift.git
-```
-* Drag the ReduxSwift.xcodeproj from the newly created ReduxSwift folder to your project.
-> It should be nested in your actual project in the Project Navigator.
-* Add ReduxSwift to your Embedded Binaries.
-> Select your project from the Project Navigator. Then, select your Target and you'll see an Embedded Binaries menu in the General tab.
-* Rejoice!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Dan Abramov for bringing Redux to our lives
-# ReduxSwift
